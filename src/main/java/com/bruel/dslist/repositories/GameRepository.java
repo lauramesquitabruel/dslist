@@ -1,4 +1,7 @@
 package com.bruel.dslist.repositories;
 
-public interface GameRepository {
+import com.bruel.dslist.entities.Game;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface GameRepository extends JpaRepository<Game, Long> {
 }

@@ -1,4 +1,4 @@
-package com.bruel.dslist.servicies;
+package com.bruel.dslist.services;
 
 import com.bruel.dslist.dto.GameMinDTO;
 import com.bruel.dslist.entities.Game;
