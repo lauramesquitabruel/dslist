@@ -1,6 +1,7 @@
 package com.bruel.dslist.dto;
 
 import com.bruel.dslist.entities.Game;
+import com.bruel.dslist.projections.GameMinProjection;
 import jakarta.persistence.Column;
 
 public class GameMinDTO {
@@ -20,6 +21,14 @@ public class GameMinDTO {
         year = entity.getYear();
         imgUrl = entity.getImgUrl();
         shortDesc = entity.getShortDesc();
+    }
+
+    public GameMinDTO(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDesc = projection.getShortDesc();
     }
 
     public Long getId() {
